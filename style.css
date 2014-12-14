@@ -1,0 +1,69 @@
+/*
+Theme Name: SGS Grafic
+Theme URL: www.tol-producciones.com.ar
+Description: Tema creado para el Sindicato Grafico Sureño
+Version: 1
+Author: Zeke Juniors
+Author URL: www.tol-producciones.com.ar
+*/
+
+/*--- Estilos Generales---*/
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background: #191919;
+	font-size: 12pt;
+	font-family: "open sans", Arial, Helvetica, sans-serif;
+}
+
+header, #Main, footer{
+	width: 85%;
+	max-width: 960px;
+	margin: 0px auto;
+}
+
+a{
+	color: #bf2222;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+
+/*---Header---*/
+
+header {
+	margin: 20px 0 20px 0;
+	overflow: hidden;
+	width: 85%;
+}
+
+figure {
+	width: 40%;
+	float: left;
+	margin: 0.2em 0 0.2em 1.6em;
+}
+
+.Header-logoSgs {
+	border-radius: 0.3em;
+	width: 25em;
+}
+
+.Header-menu {
+	width: 60%;
+	float: right;
+	padding: 10px 0px;
+	margin-top: 30px;
+}
+
+.Header-menu li{
+	list-style: none;
+	display: inline-block;
+	margin-left: 30px
+	margin-bottom: 10px;
+}
