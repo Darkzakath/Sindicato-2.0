@@ -7,7 +7,7 @@ Author: Zeke Juniors
 Author URL: www.tol-producciones.com.ar
 */
 
-/*--- Estilos Generales---*/
+/*--- Estilos Generales ---*/
 * {
 	margin: 0px;
 	padding: 0px;
@@ -19,23 +19,24 @@ body{
 	font-family: "open sans", Arial, Helvetica, sans-serif;
 }
 
-header, #Main, footer{
+header, #main, footer{
 	width: 85%;
-	max-width: 960px;
+	max-width: 1024px;
 	margin: 0px auto;
 }
 
 a{
-	color: #bf2222;
+	color: red;
 	text-decoration: none;
 }
 
 a:hover {
 	text-decoration: underline;
+	color: #bf2222;
 }
 
 
-/*---Header---*/
+/*--- Header ---*/
 
 header {
 	margin: 20px 0 20px 0;
@@ -64,6 +65,213 @@ figure {
 .Header-menu li{
 	list-style: none;
 	display: inline-block;
-	margin-left: 30px
+	margin-left: 30px;
 	margin-bottom: 10px;
+}
+
+.Header-menu li a {
+	color: white;
+}
+
+/*--- Main ---*/
+
+#main {
+	overflow: hidden;
+}
+
+
+/*--- Slideshow ---*/
+
+#main #slideshow {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	margin-bottom: 20px;	
+}
+
+#main #slideshow .thumb {
+	width: 49%;
+	float: left;
+	margin-right: 2%;
+}
+
+#main #slideshow article {
+	float: left;
+	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+	font-size: 1rem;
+	text-align: justify;
+	width: 49%;
+	color: #ffffff;
+}
+
+#main #slideshow article h2 {
+	font-size: 2rem;
+	font-weight: 300;
+	text-align: left;
+}
+
+#main #slideshow article .date {
+	font-size: 0.8rem;
+	font-weight: 500;
+	margin-bottom: 10px;
+	color: #777777;
+}
+
+#main #slideshow .slidesjs-pagination li {
+	border-radius: 1em;
+	background: white;
+	width: 12px;
+	height: 12px;
+	margin-right: 10px;
+	display: inline-block; 
+}
+
+#main #slideshow .slidesjs-pagination li a {
+	width: 12px;
+	height: 12px;
+	display: block;
+	font-size: 0pt;
+}
+
+#main #slideshow .slidesjs-pagination li .active {
+	background: #333333;
+}
+
+
+/*--- Main ---*/
+
+#main #articles_list {
+	clear: both;
+	width: 75%;
+	float: left;
+}
+
+#main #articles_list article {
+	margin-bottom: 40px;
+	margin-right: 4%;
+	padding-bottom: 40px;
+	border-bottom: 1px solid #333333;
+	overflow: hidden;
+}
+
+#main #articles_list article .thumb {
+	width: 35%;
+	margin-right: 4%;
+	float: left;
+	margin-bottom: 2%;
+}
+
+#main #articles_list article h2 {
+	font-family: "Open-Sans", Helvetica, Arial, sans-serif;
+	font-size: 1.5rem;
+	font-weight: 300;
+}
+
+#main #articles_list article h2 a {
+	color: #ffffff;
+}
+
+#main #articles_list article h2 a:hover {
+	text-decoration: none;
+	color:  #bf2222;
+}
+
+#main #articles_list article .extract {
+	text-align: justify;
+	color: #ffffff;
+}
+
+#main #articles_list article .date {
+	font-size: 0.8rem;
+	color: #777777;
+	margin-bottom: 10px;
+}
+
+#main #articles_list #pagination {
+	margin-bottom: 40px;
+	width: 100%;
+}
+
+#main #articles_list #pagination p {
+	text-align: center;
+}
+
+#main #articles_list #pagination p a {
+	margin: 0px 20px;
+	font-family: "Open-Sans", Helvetica, Arial, sans-serif;
+	font-size: 1.5rem;
+	font-weight: 300;
+	display: inline-block;
+}
+
+
+/*--- Aside ---*/
+
+#main aside {
+	width: 25%;
+	float: left;	
+}
+
+#main .widget {
+	width: 100%;
+}
+
+.widget {
+	margin-bottom: 50px;
+	display: block;
+	float: left;
+}
+
+.widget h3 {
+	font-size: 1.4rem;
+	font-weight: 400;
+	color: #333333;
+	margin-bottom: 10px;
+}
+
+.widget ul li{
+	list-style: none;
+	margin-bottom: 10px;
+}
+
+.widget ul li a {
+	font-size: 0.9rem;
+	color: #777777;
+}
+
+.widget ul li a:hover {
+	color: #bf2222;
+	text-decoration: none;
+}
+
+/*--- Footer ---*/
+
+footer {
+	width: 85%;
+}
+
+footer .widget {
+	width: 25%;
+}
+
+footer #copyright, #tol {
+	width: 100%;
+	clear: both;
+	text-align: center;
+	padding: 5px;
+	color: #333333;
+	font-size: 0.9rem;
+}
+
+footer #tol {
+	margin-bottom: 20px;
+}
+
+footer #tol a{
+	color: #777777;
+}
+
+footer #tol a:hover {
+	color: #bf2222;
+	text-decoration: none;
 }
