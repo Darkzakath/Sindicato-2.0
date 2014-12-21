@@ -2,12 +2,17 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Sindicato Grafico Sureño</title>
+	<meta name="description" content="Pagina oficial del Sindicato Grafico Sureño. 
+	Encontra toda la informacion sobre la actualidad y muchos datos útiles" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<title>Sindicato Grafico Sureño</title>
 
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="fonts/style.css">
+
+	<script type="text/javascript" src="js/prefixfree.js"></script>
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script src="js/jquery.slides.min.js"></script>
 	<script>
@@ -22,12 +27,31 @@
 <body>
 	<header>
 		<figure class="Header-logo">
-			<img  class="Header-logoSgs" src="img/logo/Logo-SGS-001.jpg" class="Header-logoImg">
+			<a href="#"><img  class="Header-logoSgs" src="img/logo/Logo-SGS-001.jpg" class="Header-logoImg"></a>
 		</figure>
 		<ul class="Header-menu">
-			<li><a href="#">Iniciar sesión</a></li>
+			<li><span class="icon-user"></span><a href="#">  Iniciar sesión</a></li>
 			<li><a href="#">Contacto</a></li>
 		</ul>
+		<nav id="Header-nav">
+            <ul>
+                <li><a href="#"><span class="icon-house"></span>  Inicio</a></li>
+                <li><a href="#"><span class="icon-newspaper"></span>  Noticias</a></li>
+				<li><a href="#"><span class=""></span>  Autoridades</a></li>
+                <li><a href="#" class="flecha-abajo"><span class="icon-menu"></span> Escala Salarial</a>
+                    <ul>
+                    	<li><a href="#">Sector Diario</a></li>
+                        <li><a href="#">Sector Patagonico</a></li>
+                        <li><a href="#">Sector Obra</a></li>
+                        <li><a href="#">Horas Excedentes</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><span class=""></span>  Convenio CCT</a></li>
+				<li><a href="#"><span class=""></span>  Beneficios</a></li>
+				<li><a href="#"><span class=""></span>  Turismo</a></li>
+				<li><a href="#"><span class=""></span>  Historia</a></li>
+            </ul>
+        </nav>
 	</header>
 	<section id="main">
 		<div id="no-slide">

@@ -15,13 +15,13 @@ Author URL: www.tol-producciones.com.ar
 
 body{
 	background: #191919;
-	font-size: 12pt;
+	font-size: 16px;
 	font-family: "open sans", Arial, Helvetica, sans-serif;
 }
 
 header, #main, footer{
 	width: 85%;
-	max-width: 1024px;
+	max-width: 960px;
 	margin: 0px auto;
 }
 
@@ -39,7 +39,7 @@ a:hover {
 /*--- Header ---*/
 
 header {
-	margin: 20px 0 20px 0;
+	padding: 20px 0 20px 0;
 	overflow: hidden;
 	width: 85%;
 }
@@ -47,19 +47,18 @@ header {
 figure {
 	width: 40%;
 	float: left;
-	margin: 0.2em 0 0.2em 1.6em;
+	margin: 0.2em 0 0.2em 0;
 }
 
 .Header-logoSgs {
 	border-radius: 0.3em;
-	width: 25em;
+	width: 18em;
 }
 
 .Header-menu {
-	width: 60%;
 	float: right;
 	padding: 10px 0px;
-	margin-top: 30px;
+	margin-top: 5px;
 }
 
 .Header-menu li{
@@ -73,12 +72,75 @@ figure {
 	color: white;
 }
 
-/*--- Main ---*/
 
-#main {
-	overflow: hidden;
+/*--- Header Nav ---*/
+
+#Header-nav {
+	height: auto; /*Junto a overflow: hidden; aplicará a nuestro elemento nav el mismo alto que el más alto de sus elementos hijos */ 
+    margin: 0; /* Centro el contenedor */
+    overflow: hidden;
+    text-align: left;
+    width: 960px;
+    padding: 20px 0 20px 0;
 }
 
+#Header-nav ul { 
+	list-style-type: none;
+}
+
+#Header-nav ul li {
+	display: inline-block;
+	float: left;
+	width: 118px;
+	margin-right: 2px;
+}
+
+#Header-nav ul li a {
+	text-align: center;
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	background-color: #004dff;
+	border: solid 1px #fff;
+	padding: 5px;
+	position: relative;
+}
+
+#Header-nav ul li:hover {
+	position: relative;
+}
+
+#Header-nav ul li a:hover {
+	background-color: #fff;
+	color: #004dff;
+	position: relative;
+}
+
+#Header-nav ul li a {
+	display: block!important;
+	display: none;
+	position: relative;
+}
+
+#Header-nav ul li ul {
+	display: none;
+}
+
+#Header-nav ul li a:hover ul{
+	display: block;
+	position: absolute;left: 0px;
+}
+
+#Header-nav ul li ul li a {
+	width: 160px;
+	padding: 6px 0px 8px 0px;
+	border-top-color: #000;
+}
+
+#Header-nav ul li ul li a:hover {
+	border-top-color: #000;
+	position: relative;
+}
 
 /*--- Slideshow ---*/
 
@@ -101,7 +163,7 @@ figure {
 	font-size: 1rem;
 	text-align: justify;
 	width: 49%;
-	color: #ffffff;
+	color: #fff;
 }
 
 #main #slideshow article h2 {
@@ -123,18 +185,18 @@ figure {
 	width: 12px;
 	height: 12px;
 	margin-right: 10px;
-	display: inline-block; 
+	display: inline-block;
 }
 
 #main #slideshow .slidesjs-pagination li a {
+	border-radius: 1em;
 	width: 12px;
 	height: 12px;
 	display: block;
-	font-size: 0pt;
 }
 
 #main #slideshow .slidesjs-pagination li .active {
-	background: #333333;
+	background: red;
 }
 
 
